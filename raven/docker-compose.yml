@@ -1,0 +1,11 @@
+version: '3'
+services:
+  ravendb:
+    image: "ravendb/ravendb"
+    ports:
+     - "8080:8080"
+    environment:
+     - RAVEN_ARGS='--Setup.Mode=None'
+     - RAVEN_Security_UnsecuredAccessAllowed='PrivateNetwork'
+     - RAVEN_Logs_Mode=Information
+     - RAVEN_License_Eula_Accepted=true
