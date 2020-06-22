@@ -1,0 +1,7 @@
+version: '3'
+services:
+  cors:
+    image: "plantuml/plantuml-server:tomcat"
+    restart: always
+    ports:
+     - "3333:8080"
