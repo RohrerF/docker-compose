@@ -1,0 +1,15 @@
+version: '3'
+services:
+  postgres:
+    image: "postgres"
+    restart: always
+    ports:
+     - "5432:5432"
+    environment:
+     - POSTGRES_USER=admin
+     - POSTGRES_PASSWORD=password
+  pgadmin4:
+    image: "thajeztah/pgadmin4"
+    restart: always
+    ports:
+     - "5050:5050"
